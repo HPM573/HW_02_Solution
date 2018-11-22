@@ -26,11 +26,9 @@ class SumRatio:
         sum = 0
         for i in range(0, num_of_elements):
             try:
-                sum += self.x[i]/self.y[i]
+                 sum += self.x[i]/self.y[i]
             except ZeroDivisionError:
                 warnings.warn('Division by 0 in calculating the ratio in position ' + str(i))
                 return math.nan
-            except:
-                warnings.warn('Something went wrong when calculating the ratio in position ' + str(i))
 
         return sum
