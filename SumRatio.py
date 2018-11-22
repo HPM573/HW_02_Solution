@@ -1,4 +1,3 @@
-import warnings
 import math
 
 
@@ -28,7 +27,7 @@ class SumRatio:
             try:
                  sum += self.x[i]/self.y[i]
             except ZeroDivisionError:
-                warnings.warn('Division by 0 in calculating the ratio in position ' + str(i))
+                print('Warning: Division by 0 in calculating the ratio in position ' + str(i))
                 return math.nan
 
         return sum
