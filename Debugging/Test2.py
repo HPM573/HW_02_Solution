@@ -1,4 +1,4 @@
-import SumRatio as Cls
+from Debugging import SumRatio as Cls
 
 x = [1, 2]
 y = [2, 4, 1]
