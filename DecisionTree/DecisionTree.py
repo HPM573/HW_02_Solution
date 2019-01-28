@@ -156,11 +156,11 @@ T4 = TerminalNode('T4', 40, 0.8)
 T5 = TerminalNode('T5', 50, 0.9)
 
 # create C2
-C2 = ChanceNode('C2', 35, 0, [T1, T2], [0.1, 0.9])
+C2 = ChanceNode('C2', 35, 0, [T1, T2], [0.7, 0.3])
 # create C1
 C1 = ChanceNode('C1', 25, 0, [C2, T3], [0.2, 0.8])
 # create C3
-C3 = ChanceNode('C3', 45, 0, [T4, T5], [0.7, 0.3])
+C3 = ChanceNode('C3', 45, 0, [T4, T5], [0.1, 0.9])
 
 # create D1
 D1 = DecisionNode('D1', 0, 0, [C1, C3])
