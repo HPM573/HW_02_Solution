@@ -145,7 +145,7 @@ class DecisionNode(Node):
 
 
 #######################
-# See figure DT3.png (from the project menu) for the structure of this decision tree
+# See figure DecisionTree.png (from the project menu) for the structure of this decision tree
 ########################
 
 # create the terminal nodes
